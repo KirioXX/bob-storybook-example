@@ -85,6 +85,7 @@ The `package.json` file contains various scripts for common tasks:
 - `yarn example start`: start the Metro server for the example app.
 - `yarn example android`: run the example app on Android.
 - `yarn example ios`: run the example app on iOS.
+- `yarn example web`: run the example app on Web.
 
 ### Sending a pull request
 
