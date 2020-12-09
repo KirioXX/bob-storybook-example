@@ -1,0 +1,22 @@
+{
+  "name": "@patchwork/components-example",
+  "displayName": "Components Example",
+  "expo": {
+    "name": "@patchwork/components-example",
+    "slug": "patchwork-components-example",
+    "description": "Example app for @patchwork/components",
+    "privacy": "public",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
