@@ -1,1 +1,1 @@
-import './Button/Button.stories';
+import './Button/Button.stories.tsx';

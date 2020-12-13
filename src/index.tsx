@@ -1,1 +1,1 @@
-import './global.styles';
+export * from './Button';

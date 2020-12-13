@@ -7,33 +7,36 @@
   "scripts": {
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web",
+    "web": "start-storybook -p 6006 -c .storybook",
+    "build-storybook": "build-storybook -c .storybook",
     "start": "expo start",
-    "test": "jest",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "test": "jest"
   },
   "dependencies": {
-    "expo": "^38.0.0",
-    "expo-splash-screen": "^0.3.1",
-    "react": "16.11.0",
-    "react-dom": "16.11.0",
-    "react-native": "0.62.2",
-    "react-native-unimodules": "~0.10.1",
-    "react-native-web": "^0.12.3"
+    "expo": "^40.0.0",
+    "expo-splash-screen": "~0.8.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "0.63.4",
+    "react-native-unimodules": "~0.12.0",
+    "react-native-web": "~0.14.0",
+    "styled-components": "5.2.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.6",
+    "@babel/core": "~7.9.0",
     "@babel/runtime": "^7.9.6",
-    "@storybook/addon-actions": "^6.1.10",
-    "@storybook/addon-essentials": "^6.1.10",
+    "@emotion/core": "^11.0.0",
+    "@storybook/addon-actions": "^6.1.11",
+    "@storybook/addon-essentials": "^6.1.11",
     "@storybook/addon-knobs": "^5.3",
-    "@storybook/addon-links": "^6.1.10",
+    "@storybook/addon-links": "^6.1.11",
+    "@storybook/react": "^6.1.11",
     "@storybook/react-native": "^5.3.23",
-    "@storybook/react-native-server": "^5.3.23",
     "babel-loader": "^8.2.2",
     "babel-plugin-module-resolver": "^4.0.0",
-    "babel-preset-expo": "^8.2.3",
-    "expo-cli": "^3.21.12"
+    "babel-preset-expo": "8.3.0",
+    "emotion-theming": "^11.0.0",
+    "expo-cli": "^4.0.13",
+    "storybook-addon-designs": "^5.4.2"
   }
 }

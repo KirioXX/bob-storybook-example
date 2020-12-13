@@ -1,11 +1,8 @@
-import React from 'react';
-import { View } from 'react-native';
-import style from './style';
+import styled from 'styled-components/native';
 
-type CenterViewProps = {
-  children: any;
-};
-
-export default function CenterView({ children }: CenterViewProps) {
-  return <View style={style.main}>{children}</View>;
-}
+export const CenterView = styled.View`
+  flex: 1;
+  justify-content: 'center';
+  align-items: 'center';
+`;
+export default CenterView;

@@ -1,11 +1,7 @@
-import React from 'react';
-import { TouchableHighlight } from 'react-native';
+import styled from 'styled-components/native';
 
-type ButtonProps = {
-  onPress: () => void;
-  children: any;
-};
+const Button = styled.Button`
+  background-color: '#52B542';
+`;
 
-export default function Button({ onPress, children }: ButtonProps) {
-  return <TouchableHighlight onPress={onPress}>{children}</TouchableHighlight>;
-}
+export default Button;

@@ -2,18 +2,23 @@
 to: <%= absPath %>/<%= component_name %>.stories.tsx
 ---
 import React from 'react';
-import { <%= component_name %> } from './';
-import { Story, Meta } from '@storybook/react/types-6-0';
+import { storiesOf } from '@storybook/react-native';
+import { withDesign } from 'storybook-addon-designs';
 
-type Props = React.ComponentProps<typeof <%= component_name %>>
+import <%= component_name %> from '.';
 
-const csf: Meta = {
-  title: '<%= category %>/<%= component_name %>',
-}
+storiesOf('<%= category %>/<%= component_name %>', module)
+  .addDecorator(withDesign)
+  .add(
+    'Default',
+    (args) => (
+      <<%= component_name %> {...args}/>
+    ),
+    {
+      design: {
+        type: 'figma',
+        url: 'FILL ME',
+      },
+    }
+  );
 
-const Template: Story<Props> = (args) => <<%= component_name %> {...args} />;
-
-export const c1 = Template.bind({});
-c1.storyName = 'default'
-
-export default csf
