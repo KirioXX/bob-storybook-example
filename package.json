@@ -25,10 +25,13 @@
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "prepare": "bob build",
     "release": "release-it",
+
     "example": "yarn --cwd example",
     "storybook": "yarn --cwd example storybook",
     "pods": "cd example && pod-install --quiet",
-    "bootstrap": "yarn example && yarn && yarn pods"
+    "bootstrap": "yarn example && yarn && yarn pods",
+
+    "new:component": "hygen new component"
   },
   "keywords": [
     "react-native",
@@ -42,6 +45,10 @@
     "url": "https://github.com/patchworkhealth/PatchworkApp/issues"
   },
   "homepage": "https://github.com/patchworkhealth/PatchworkApp#readme",
+  "dependencies": {
+    "react-native-use-styles": "1.3.0",
+    "styled-components": "5.2.1"
+  },
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
     "@react-native-community/bob": "^0.16.2",
@@ -53,6 +60,7 @@
     "@storybook/addon-ondevice-actions": "^5.3.23",
     "@storybook/addon-ondevice-knobs": "^5.3.23",
     "@storybook/react-native": "^5.3.23",
+    "@testing-library/react-native": "^7.1.0",
     "@types/jest": "^26.0.0",
     "@types/react": "^17.0.0",
     "@types/react-native": "0.63.37",
@@ -62,6 +70,7 @@
     "eslint-config-prettier": "^7.0.0",
     "eslint-plugin-prettier": "^3.1.3",
     "husky": "^4.2.5",
+    "hygen": "^6.0.4",
     "jest": "^26.0.1",
     "pod-install": "^0.1.0",
     "prettier": "^2.0.5",
@@ -72,7 +81,9 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-use-styles": "*",
+    "styled-components": "*"
   },
   "jest": {
     "preset": "react-native",
@@ -149,9 +160,5 @@
       "module",
       "typescript"
     ]
-  },
-  "dependencies": {
-    "react-native-use-styles": "^1.3.0",
-    "styled-components": "^5.2.1"
   }
 }
