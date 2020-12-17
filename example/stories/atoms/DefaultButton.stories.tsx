@@ -1,19 +1,16 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import { withDesign } from 'storybook-addon-designs';
+import { Text } from 'react-native';
 
-import Button from '.';
+import { DefaultButton } from '@patchwork/components';
 import CenterView from '../CenterView';
 
-storiesOf('Button', module)
+storiesOf('atoms/DefaultButton', module)
   .addDecorator((getStory: () => any) => <CenterView>{getStory()}</CenterView>)
-  .addDecorator(withKnobs)
   .addDecorator(withDesign)
-  .addParameters({
-    component: Button,
-  })
   .addParameters({
     design: {
       type: 'figma',
@@ -21,12 +18,16 @@ storiesOf('Button', module)
         'https://www.figma.com/file/Klm6pxIZSaJFiOMX5FpTul9F/storybook-addon-designs-sample',
     },
   })
+  .addParameters({
+    component: DefaultButton,
+  })
   .add('with text', () => (
-    <Button
-      onPress={action('clicked-text')}
-      title={text('Button text', 'Hello Button')}
-    />
+    <DefaultButton onPress={action('clicked-text')}>
+      <Text style={{ color: 'white' }}>{text('Button text', 'Button')}</Text>
+    </DefaultButton>
   ))
   .add('with some emoji', () => (
-    <Button onPress={action('clicked-emoji')} title="😀 😎 👍 💯" />
+    <DefaultButton onPress={action('clicked-emoji')}>
+      <Text>😀 😎 👍 💯</Text>
+    </DefaultButton>
   ));

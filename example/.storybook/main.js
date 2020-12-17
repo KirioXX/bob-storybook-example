@@ -5,7 +5,8 @@ const node_modules = path.join(__dirname, '../node_modules');
 
 module.exports = {
   "stories": [
-    "../../src/index.stories"
+    "../stories/index.ts",
+    "../stories/**/*.md"
   ],
   "addons": [
     "@storybook/addon-links",
