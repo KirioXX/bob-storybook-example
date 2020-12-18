@@ -4,15 +4,12 @@ const root = path.resolve(__dirname, '../../');
 const node_modules = path.join(__dirname, '../node_modules');
 
 module.exports = {
-  "stories": [
-    "../stories/index.ts",
-    "../stories/**/*.md"
-  ],
-  "addons": [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/addon-knobs",
-    "storybook-addon-designs"
+  stories: ['../stories/index.ts', '../stories/**/*.md'],
+  addons: [
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-knobs',
+    'storybook-addon-designs',
   ],
   webpackFinal: async (config) => {
     config.module.rules.push({
@@ -33,4 +30,4 @@ module.exports = {
     // Return the altered config
     return config;
   },
-}
+};
