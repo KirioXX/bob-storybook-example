@@ -6,9 +6,10 @@ const node_modules = path.join(__dirname, '../node_modules');
 module.exports = {
   stories: ['../stories/index.ts', '../stories/**/*.md'],
   addons: [
-    '@storybook/addon-links',
+    '@storybook/addon-controls',
     '@storybook/addon-essentials',
     '@storybook/addon-knobs',
+    '@storybook/addon-links',
     'storybook-addon-designs',
   ],
   webpackFinal: async (config) => {
