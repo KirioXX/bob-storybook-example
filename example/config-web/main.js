@@ -6,6 +6,7 @@ const node_modules = path.join(__dirname, '../node_modules');
 module.exports = {
   stories: ['../stories/index.ts', '../stories/**/*.md'],
   addons: [
+    '@storybook/addon-docs',
     '@storybook/addon-controls',
     '@storybook/addon-essentials',
     '@storybook/addon-knobs',

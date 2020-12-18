@@ -8,7 +8,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "start-storybook -p 6006 -c config-web",
-    "build-storybook": "build-storybook -c config-web -o docs-build -s ./assets",
+    "build-storybook": "build-storybook -c config-web -o docs-build -s assets",
     "start": "expo start",
     "test": "jest"
   },
@@ -28,6 +28,7 @@
     "@babel/runtime": "^7.9.6",
     "@storybook/addon-actions": "^6.1.11",
     "@storybook/addon-controls": "^6.1.11",
+    "@storybook/addon-docs": "^6.1.11",
     "@storybook/addon-essentials": "^6.1.11",
     "@storybook/addon-knobs": "^5.3",
     "@storybook/addon-links": "^6.1.11",
