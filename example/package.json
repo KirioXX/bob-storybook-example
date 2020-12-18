@@ -8,7 +8,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "start-storybook -p 6006 -c config-web",
-    "build-storybook": "build-storybook -c config-web -o docs-build -s assets",
+    "build-storybook": "build-storybook -c config-web -o docs-build",
     "start": "expo start",
     "test": "jest"
   },
