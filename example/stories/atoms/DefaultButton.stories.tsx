@@ -6,7 +6,7 @@ import { withDesign } from 'storybook-addon-designs';
 import { Text } from 'react-native';
 
 import CenterView from '../CenterView';
-import { DefaultButton } from '@patchwork/components';
+import { DefaultButton } from 'bob-storybook-example';
 
 storiesOf('atoms/DefaultButton', module)
   .addDecorator((getStory: () => any) => <CenterView>{getStory()}</CenterView>)

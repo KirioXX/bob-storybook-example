@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@patchwork/components": ["./src/index"]
+      "bob-storybook-example": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

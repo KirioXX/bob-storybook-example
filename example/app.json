@@ -1,10 +1,10 @@
 {
-  "name": "@patchwork/components-example",
+  "name": "bob-storybook-example-example",
   "displayName": "Components Example",
   "expo": {
-    "name": "@patchwork/components-example",
-    "slug": "patchwork-components-example",
-    "description": "Example app for @patchwork/components",
+    "name": "bob-storybook-example-example",
+    "slug": "bob-storybook-example-example",
+    "description": "Example app for bob-storybook-example",
     "privacy": "public",
     "version": "1.0.0",
     "platforms": [

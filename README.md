@@ -1,6 +1,6 @@
-# @patchwork/components
+# bob-storybook-example
 
-React(-Native) components for patchwork projects
+React(-Native) components for projects
 
 [🎨 Storybook](https://kirioxx.github.io/bob-storybook-example/?path=/story/atoms-defaultbutton--with-text)
 [🤖 Android App](https://github.com/KirioXX/bob-storybook-example)
@@ -9,13 +9,13 @@ React(-Native) components for patchwork projects
 ## Installation
 
 ```sh
-npm install @patchwork/components
+npm install bob-storybook-example
 ```
 
 ## Usage
 
 ```js
-import Components from "@patchwork/components";
+import Components from "bob-storybook-example";
 
 // ...
 

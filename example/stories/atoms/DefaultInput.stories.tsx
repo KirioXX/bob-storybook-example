@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react-native';
 
-import { DefaultInput } from '@patchwork/components';
+import { DefaultInput } from 'bob-storybook-example';
 import CenterView from '../CenterView';
 
 storiesOf('atoms/DefaultInput', module)

@@ -6,7 +6,7 @@ import { storiesOf } from '@storybook/react-native';
 import { withDesign } from 'storybook-addon-designs';
 
 import CenterView from '../CenterView';
-import { <%= component_name %> } from '@patchwork/components';
+import { <%= component_name %> } from 'bob-storybook-example';
 
 storiesOf('<%= category %>/<%= component_name %>', module)
   .addDecorator((getStory: () => any) => <CenterView>{getStory()}</CenterView>)

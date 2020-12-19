@@ -1,7 +1,7 @@
 {
-  "name": "@patchwork/components",
+  "name": "bob-storybook-example",
   "version": "0.1.0",
-  "description": "React(-Native) components for patchwork projects",
+  "description": "React(-Native) components for projects",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",
@@ -13,7 +13,7 @@
     "android",
     "ios",
     "cpp",
-    "patchwork-components.podspec",
+    "bob-storybook-example.podspec",
     "!lib/typescript/example",
     "!**/__tests__",
     "!**/__fixtures__",
@@ -35,13 +35,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/patchworkhealth/PatchworkApp",
-  "author": "Patchwork Health <help@patchwork.health> (https://www.patchwork.health/)",
+  "repository": "https://github.com/KirioXX/bob-storybook-example",
+  "author": "Ben Wunderlich <wunderlich.ben@gmail.com> (https://www.wunderlichben.me/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/patchworkhealth/PatchworkApp/issues"
+    "url": "https://github.com/KirioXX/bob-storybook-example/issues"
   },
-  "homepage": "https://github.com/patchworkhealth/PatchworkApp#readme",
+  "homepage": "https://github.com/KirioXX/bob-storybook-example#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
     "@react-native-community/bob": "^0.16.2",
