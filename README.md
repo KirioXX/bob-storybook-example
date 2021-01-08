@@ -15,11 +15,16 @@ npm install bob-storybook-example
 ## Usage
 
 ```js
-import Components from "bob-storybook-example";
+import { DefaultButton } from "bob-storybook-example";
 
 // ...
+const App = () => (<div>
+  <DefaultButton onPress={() => alert('Hello World')}>
+    Click Me!
+  </DefaultButton>
+</div>);
 
-const result = await Components.multiply(3, 7);
+export default App;
 ```
 
 ## Contributing
