@@ -1,0 +1,18 @@
+name: Publish NPM Package
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # Setup .npmrc file to publish to GitHub Packages
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - run: yarn
+      - run: yarn release --ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.ADMIN_TOKEN }}
