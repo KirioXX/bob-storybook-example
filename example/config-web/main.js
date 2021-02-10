@@ -4,7 +4,7 @@ const root = path.resolve(__dirname, '../../');
 const node_modules = path.join(__dirname, '../node_modules');
 
 module.exports = {
-  stories: ['../stories/index.ts', '../stories/**/*.md'],
+  stories: ['../stories/index.ts', '../stories/**/*.mdx'],
   addons: [
     '@storybook/addon-docs',
     '@storybook/addon-controls',
@@ -27,6 +27,20 @@ module.exports = {
       'react-native': path.join(node_modules, 'react-native-web'),
       'react-native-web': path.join(node_modules, 'react-native-web'),
       '@storybook/react-native': path.join(node_modules, '@storybook/react'),
+    });
+    
+    // Add fonts
+    config.module.rules.push({
+      test: /\.(png|woff|woff2|eot|ttf|otf|svg)$/,
+      use: [
+        {
+          loader: 'file-loader',
+          query: {
+            name: '[name].[ext]',
+          },
+        },
+      ],
+      include: path.resolve(__dirname, '../assets'),
     });
 
     // Return the altered config
