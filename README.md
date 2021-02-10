@@ -3,13 +3,32 @@
 React(-Native) components for projects
 
 [🎨 Storybook](https://kirioxx.github.io/bob-storybook-example/?path=/story/atoms-defaultbutton--with-text)
-[🤖 Android App](https://github.com/KirioXX/bob-storybook-example)
-[🍏 iOS App](https://github.com/KirioXX/bob-storybook-example)
 
 ## Installation
 
 ```sh
-npm install bob-storybook-example
+npm install @kirioxx/bob-storybook-example
+```
+
+## Installation from private registry
+
+Request a personal access token on GitHub under:<br/>
+__Settings > Developer settings > Personal access tokens > Generate new token__<br/>
+enable for this token __[repo]__ and __[read:packages]__ access.
+
+Use your token to authenticate your self with the private registry:
+```sh
+npm login --scope=@kirioxx --registry=https://npm.pkg.github.com
+```
+
+add to your project root a `.npmrc` file with this content:
+```
+@kirioxx:registry=https://npm.pkg.github.com
+```
+
+Install the package via
+```sh
+npm install @kirioxx/bob-storybook-example
 ```
 
 ## Usage
