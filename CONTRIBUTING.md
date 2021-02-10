@@ -53,6 +53,13 @@ To edit the Objective-C files, open `example/ios/ComponentsExample.xcworkspace` 
 
 To edit the Kotlin files, open `example/android` in Android studio and find the source files at `bob-storybook-example` under `Android`.
 
+#### Work-In-Progress testing
+Whilst developing components you can test them in the Mobile App by running the following 
+```sh
+yarn copyWipToApp $PATH_TO_YOUR_PROJECT
+```
+
+
 ### Commit message convention
 
 We follow the [conventional commits specification](https://www.conventionalcommits.org/en) for our commit messages:
