@@ -1,6 +1,6 @@
 {
   "name": "@kirioxx/bob-storybook-example",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React(-Native) components for projects",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
