@@ -127,7 +127,9 @@
     "hooks": {
       "before:npm:release": [
         "echo \"//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN\" > .npmrc",
-        "echo \"@kirioxx:registry=https://npm.pkg.github.com\" >> .npmrc"
+        "echo \"@kirioxx:registry=https://npm.pkg.github.com\" >> .npmrc",
+        "git config --global user.email \"wunderlich.ben@gmail.com\"",
+        "git config --global user.name \"KirioXX\""
       ]
     }
   },
