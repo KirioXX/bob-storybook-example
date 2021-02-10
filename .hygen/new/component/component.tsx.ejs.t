@@ -1,15 +1,10 @@
 ---
 to: <%= absPath %>/<%= component_name %>.tsx
 ---
-import React from 'react';
-import { View } from 'react-native'
-import useStyles from './<%= component_name %>.styles';
+import styled from 'styled-components/native';
 
 type <%= component_name %>Props = {};
 
-export const <%= component_name %> = ({}: <%= component_name %>Props) => {
-  const global = useState(true);
-  const s = useStyles([global]);
-
-  return <View style={s`fx:1 &purple`} testID="test" />;
-};
+export const <%= component_name %> = styled.View<<%= component_name %>Props>`
+  background-color: '#BADA55';
+`;

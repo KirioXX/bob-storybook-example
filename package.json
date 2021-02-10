@@ -28,7 +28,8 @@
     "example": "yarn --cwd example",
     "pods": "cd example && pod-install --quiet",
     "bootstrap": "yarn example && yarn && yarn pods",
-    "new:component": "hygen new component"
+    "new:component": "hygen new component",
+    "copyWipToApp": "yarn prepare && ./scripts/copyWipToApp.sh"
   },
   "keywords": [
     "react-native",
@@ -98,7 +99,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn lint && yarn typescript"
+      "pre-commit": "yarn lint --fix && yarn typescript"
     }
   },
   "commitlint": {
@@ -124,7 +125,10 @@
       }
     },
     "hooks": {
-      "before:npm:release": "echo \"//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN\" > .npmrc && echo \"@kirioxx:registry=https://npm.pkg.github.com\" >> .npmrc"
+      "before:npm:release": [
+        "echo \"//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN\" > .npmrc",
+        "echo \"@kirioxx:registry=https://npm.pkg.github.com\" >> .npmrc"
+      ]
     }
   },
   "eslintConfig": {

@@ -5,11 +5,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react-native';
 import { withDesign } from 'storybook-addon-designs';
 
-import CenterView from '../CenterView';
-import { <%= component_name %> } from 'bob-storybook-example';
+import { <%= component_name %> } from '@patchworkhealth/components';
 
-storiesOf('<%= category %>/<%= component_name %>', module)
-  .addDecorator((getStory: () => any) => <CenterView>{getStory()}</CenterView>)
+storiesOf('<%= parentPath %>/<%= component_name %>', module)
   .addDecorator(withDesign)
   .addParameters({
     design: {
